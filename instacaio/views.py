@@ -35,4 +35,4 @@ def signup(request):
             return redirect('inicio')
     else:
         form = UserCreationForm()
-    return render(request, 'contas/registrar.html', {'form': form})
+    return render(request, 'registration/registrar.html', {'form': form})
