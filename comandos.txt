@@ -54,7 +54,7 @@ pip freeze > requirements.txt
 # Inicia o projeto #
 ####################
 django-admin startproject aula07 .
-python manage.py startapp instacaio
+python manage.py startapp app
 
 ##########################################################
 # Atualiza banco de dados (sempre que mudar o models.py) #

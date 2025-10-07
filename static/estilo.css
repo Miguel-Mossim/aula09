@@ -5,7 +5,12 @@ nav {
     width: 100%;
 }
 
-nav a {
+nav>div {
+    display: flex;
+    flex-direction: row;
+}
+
+nav a,nav form {
     color: white;
     transition: all 0.6s;
     text-decoration: none;

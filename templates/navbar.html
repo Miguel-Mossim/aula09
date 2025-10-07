@@ -4,15 +4,15 @@
         <a href="{% url 'postar' %}">Postar</a>
     </div>
     <div style="margin:5px">
-        {{ user.username }}
         {% if user.is_authenticated %}
-            <form action="{% url 'logout' %}" method="post" style="display:inline;">
-                {% csrf_token %}
-                <input type="submit" value="Logout" class="btn btn-danger">
-            </form>
+        <form action=" {% url "logout" %} " method="post">
+            {% csrf_token %}
+            <input type="submit" value="Logout" class="bg-transparent border-0 text-white">
+        </form>
+        <a href="#">{{ user }}</a>
         {% else %}
-            <a href="{% url 'login' %}">Login</a>
-            <a href="{% url 'registrar' %}">Cadastrar</a>
-        {% endif %}        
+        <a href="{% url "login" %}">Login</a>
+        <a href="{% url "signup" %}">Cadastro</a>
+        {% endif %}
     </div>
 </nav>

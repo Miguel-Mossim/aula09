@@ -1,10 +1,10 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
-from instacaio import views
+from app import views
 
 urlpatterns = [
     path('postar/', views.criar_post, name='postar'),
-    path('registrar/', views.signup, name='registrar'),
     path('', views.inicio, name='inicio'),
+    path('contas/', include("contas.urls")),
 ]

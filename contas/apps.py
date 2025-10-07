@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class InstacaioConfig(AppConfig):
+class ContasConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'instacaio'
+    name = 'contas'
